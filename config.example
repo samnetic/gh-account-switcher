@@ -1,0 +1,17 @@
+# GitHub Account Switcher Configuration
+
+# Default account (fallback when no directory pattern matches)
+DEFAULT_ACCOUNT=personal
+
+# Account definitions
+# Format: ACCOUNT_<name>=<github-username>|<display-name>|<email>
+ACCOUNT_personal=your-username|Your Name|your@email.com
+ACCOUNT_corporate=work-username|Work Name|work@company.com
+
+# Directory patterns
+# Format: <directory-path>=<account-name>
+# Note: More specific (longer) paths take priority over shorter ones
+# Tip: Use ~/=<default-account> to catch all directories under home
+~/personal=personal
+~/work=corporate
+~/=corporate
